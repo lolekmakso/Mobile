@@ -1,22 +1,28 @@
-html, body{
-    height: 100%;
+*, *::before, *::after{
+    box-sizing: border-box;
 }
 
-p{
-    margin: 0;
+html,
+body {
+  height: 100%;
 }
 
-body{
-    display: flex;
-    flex-direction: column;
+p {
+  margin: 0;
 }
 
-router-outlet{
-    display: none;
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: $ff;
 }
 
-app-root{
-    flex-grow: 1;
-    display: grid;
-    grid-template-rows: auto 1fr auto;
+router-outlet {
+  display: none;
+}
+
+app-root {
+  flex-grow: 1;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
 }
