@@ -1,0 +1,40 @@
+@import 'angular';
+
+.progress {
+    margin-top: 15px;
+    &__title {
+      font-family: "Roboto";
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 21px;
+      color: #595085;
+      margin-bottom: 12px;
+    }
+  
+    &__line {
+      background: #fdf9fb;
+      border-radius: 5px;
+      height: 8px;
+      position: relative;
+    }
+  
+    &__bar {
+      position: absolute;
+      width: 60%;
+      height: 4px;
+      background: #c93f8d;
+      border-radius: 5px;
+      transition: $transition;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+    }
+  
+    .value {
+      font-family: "Roboto";
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 21px;
+      color: #c93f8d;
+    }
+  }
